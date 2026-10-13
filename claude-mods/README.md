@@ -1,6 +1,6 @@
 # claude-mods
 
-Personal Claude Code mods (function-hook plugins). Each mod lives in its own folder under `mods/`, and the repo root is a plugin marketplace that lists them all.
+Personal Claude Code mods (function-hook plugins). Each mod lives in its own folder under `mods/`, and this folder is a plugin marketplace that lists them all. It lives inside the `setup` repo.
 
 ```
 claude-mods/
@@ -12,7 +12,9 @@ claude-mods/
 │           ├── hooks.json            # { "modules": ["./register.ts"] }
 │           ├── register.ts           # the code
 │           └── register.test.ts      # claude plugin test
-└── scripts/new-mod.sh                # scaffold a new mod
+├── install.sh                        # validate, test and install mods
+├── scripts/new-mod.sh                # scaffold a new mod
+└── CLAUDE.md                         # context for agents working here
 ```
 
 ## Add a mod
@@ -42,24 +44,21 @@ claude plugin validate .             # the marketplace file
 
 Type definitions are generated in `mods/<mod>/.claude-plugin/types/` the first time Claude Code loads the mod (gitignored). After that, `tsc -p mods/<mod>` type-checks it.
 
-## Use them every day
-
-Add this folder as a local marketplace once, then install the mods you want:
+## Install
 
 ```sh
-claude plugin marketplace add ~/repos/claude-mods
-claude plugin install my-mod@claude-mods
+./install.sh                 # validate, test and install every mod (user scope)
+./install.sh my-mod          # just these mods
+./install.sh --list          # the mods here, and which are installed
+./install.sh --uninstall my-mod
+./install.sh --help          # --scope user|project|local, --skip-checks
 ```
 
-Mods installed this way are read straight from this folder: after an edit, run `/reload-plugins` in a session.
+This folder is added as a local-folder marketplace (`claude-mods`). Installed mods are read straight from `mods/<name>`, so after an edit, run `/reload-plugins` in a session. The script is safe to re-run.
 
 ## Share
 
-Push to GitHub, and anyone can install a mod with:
-
-```
-/plugin install my-mod --marketplace <owner>/claude-mods
-```
+`/plugin install <mod> --marketplace <owner>/<repo>` looks for `.claude-plugin/marketplace.json` at the root of the GitHub repo. This folder isn't the root of `setup`, so to share mods, publish `claude-mods/` as its own repo, or add a root-level marketplace to `setup` that points at `./claude-mods/mods/<name>`.
 
 ## Permissions
 

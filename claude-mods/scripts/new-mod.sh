@@ -49,4 +49,5 @@ jq --arg name "$name" --arg description "$description" \
   "$marketplace" > "$tmp" && mv "$tmp" "$marketplace"
 
 echo "Created mods/$name and listed it in .claude-plugin/marketplace.json"
-echo "Try it:  claude --plugin-dir $dir"
+echo "Try it:   claude --plugin-dir $dir"
+echo "Install:  $root/install.sh $name"

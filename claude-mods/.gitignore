@@ -1,0 +1,4 @@
+# Laid by Claude Code each time it loads a mod; regenerated, never edited
+mods/*/.claude-plugin/types/
+.DS_Store
+node_modules/

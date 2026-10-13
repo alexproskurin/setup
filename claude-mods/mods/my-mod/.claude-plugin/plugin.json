@@ -1,0 +1,6 @@
+{
+  "name": "my-mod",
+  "version": "0.1.0",
+  "description": "Starter mod: a /hello command that runs code on the host",
+  "author": { "name": "Alex Proskurin" }
+}

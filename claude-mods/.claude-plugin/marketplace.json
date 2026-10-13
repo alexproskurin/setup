@@ -1,0 +1,14 @@
+{
+  "name": "claude-mods",
+  "owner": {
+    "name": "Alex Proskurin"
+  },
+  "description": "Personal Claude Code mods",
+  "plugins": [
+    {
+      "name": "my-mod",
+      "source": "./mods/my-mod",
+      "description": "Starter mod: a /hello command that runs code on the host"
+    }
+  ]
+}

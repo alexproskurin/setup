@@ -8,7 +8,7 @@
     {
       "name": "my-mod",
       "source": "./mods/my-mod",
-      "description": "Starter mod: a /hello command that runs code on the host"
+      "description": "Starter mod: a hello skill whose TypeScript script runs in Claude Code, Codex and opencode"
     }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/agent-board/runtime.md": {
+      "pageVersion": "sha256:1b1b5e64be3ffccc135e00cfcd5e823517f6d6c4e911cf85f7d2feebd17fb032",
+      "completedBy": "claude-code",
+      "completedRunId": "40063013-42fb-4cee-b5bb-33fe41dad2ad",
+      "gitHead": "f3a4b06696ba70dab93b2f07a13940838339439d",
+      "sourceFingerprint": "sha256:9a3c9d2becff08218a99734fd0c46148bb0f227f9bde7327c820444f59eab532"
+    },
+    "/openwiki/agent-board/template-and-installer.md": {
+      "pageVersion": "sha256:e99452df41dcc624f9f5949f0ad7da5593086a2dbad4a56135793ffa474fb306",
+      "completedBy": "claude-code",
+      "completedRunId": "40063013-42fb-4cee-b5bb-33fe41dad2ad",
+      "gitHead": "f3a4b06696ba70dab93b2f07a13940838339439d",
+      "sourceFingerprint": "sha256:9a3c9d2becff08218a99734fd0c46148bb0f227f9bde7327c820444f59eab532"
+    },
+    "/openwiki/claude-mods/mods-and-install.md": {
+      "pageVersion": "sha256:7417dc03d51fb14d78cc667f8ad83a7cc100a72a87f992df5d52ddb3e975b3cc",
+      "completedBy": "claude-code",
+      "completedRunId": "40063013-42fb-4cee-b5bb-33fe41dad2ad",
+      "gitHead": "f3a4b06696ba70dab93b2f07a13940838339439d",
+      "sourceFingerprint": "sha256:9a3c9d2becff08218a99734fd0c46148bb0f227f9bde7327c820444f59eab532"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:971a2d14db5ba184ce20433686c8837347bac279a13c559f5171c0166faef1d2",
+      "completedBy": "claude-code",
+      "completedRunId": "40063013-42fb-4cee-b5bb-33fe41dad2ad",
+      "gitHead": "f3a4b06696ba70dab93b2f07a13940838339439d",
+      "sourceFingerprint": "sha256:9a3c9d2becff08218a99734fd0c46148bb0f227f9bde7327c820444f59eab532"
+    },
+    "/openwiki/theox/local-setup.md": {
+      "pageVersion": "sha256:1c548d9ea6caf2d7e474626a75de9a7f3cf52956c2783e3904b6da25b282080b",
+      "completedBy": "claude-code",
+      "completedRunId": "40063013-42fb-4cee-b5bb-33fe41dad2ad",
+      "gitHead": "f3a4b06696ba70dab93b2f07a13940838339439d",
+      "sourceFingerprint": "sha256:9a3c9d2becff08218a99734fd0c46148bb0f227f9bde7327c820444f59eab532"
+    }
+  }
+}

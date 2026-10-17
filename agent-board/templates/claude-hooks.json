@@ -1,0 +1,43 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["__AGENT_BOARD__", "session-start", "--format", "claude"],
+            "timeout": 30,
+            "statusMessage": "Checking the agent board"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["__AGENT_BOARD__", "post-tool", "--format", "claude"],
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["__AGENT_BOARD__", "stop", "--format", "claude"],
+            "timeout": 60,
+            "statusMessage": "Checking the agent board"
+          }
+        ]
+      }
+    ]
+  }
+}

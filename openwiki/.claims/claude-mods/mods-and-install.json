@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7417dc03d51fb14d78cc667f8ad83a7cc100a72a87f992df5d52ddb3e975b3cc",
+  "claims": [
+    {
+      "id": "claim_be0dfbdc71ba4390a7156b5512d05564",
+      "statement": "install.sh looks for Codex via CODEX_BIN, then codex on PATH, then the binary inside /Applications/ChatGPT.app or /Applications/Codex.app, and for opencode on PATH or at ~/.opencode/bin/opencode.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/install.sh#L61-L71",
+          "version": "repo-lines-v1:sha256:5f23f0ae93eeb2ce099c43777e8762aa08116355d319694d4fffdb8c63137d65:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5NmQzMGRmYjA5ODEwYTE1NzhmMDk4NzljNjc2NTZmMDUzNDg5MWVjMjhhNzY5NzBhODVjNDY0OTJlMWY5MDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlmOTUxMjZmNmRhYmJmMThhYmI3MGM4MmRlMGM5MzQxOWRiZjcwYjI4YjRlNDQ5ODllOWRhOTI2NjhhNGY3NDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkzNDNmYTYwMWQ2MGNkM2UzZjM4NzAxNTU3ZDg0ODJkOWNlMjZmOGYwNjhhOTc5MjRlZWVkY2Y5ZThiNmEzZmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0c04e818451641a9bef4e13fcb273e34",
+      "statement": "install.sh warns about mod folders missing from the marketplace and fails when asked to install an unlisted mod.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/install.sh#L103-L113",
+          "version": "repo-lines-v1:sha256:41ca2b798aded06be337050c54f750a0e806fa2417f35dcee458cd2c38ce6638:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRjZTBlMmUyZDA3NmUxNDQ1YTg4NTlkYWNlZjE3Y2JmYTNiMWE4YzdkNTQwMGFiOTUyMTg0N2UwNzYyY2FjMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxMTdmYTAwNmJhOTIwODUwMGIyOTMwY2U2OWNiZGU0MzZjNjQ3YWZhOTE3Y2I3Mzk2YTliYzkxMTFhNDZkZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFmNGJiNDBiMmRiMTNkNWZlNDBmZTFhMDIzNzhjMTJkMjBlMmVjOWEzODU4ODNkYTRlYzA1MjQzYWFkOTJiZWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkxMmJmZWM1MjUxYjFkNDgyODgwZDVkNjE3OTlmOTJmZjdjODE5NmVhMDZiMDljNWVlYzY5ODU4MjRjNjk3ZDkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_252824baa4254bc4ac1ebaed42177811",
+      "statement": "Codex and shared skills are generated with Claude path variables replaced by absolute paths and each !`cmd` line rewritten as a Run instruction for the model.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/install.sh#L124-L152",
+          "version": "repo-lines-v1:sha256:f149fbbb1b4c9ce7888ad41cb7e51a64c6e38ff039aa5a47f57bf4d25c51de93:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkNDkyOTE0MjYzNDk3MjYyN2EyMGE2MGFkNTk3YTIxNDliMmNkZTY3MDg2M2FiOTZkYWRiYjVjOTViNzk2ZGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzOGJmZDExODRlYTUxNzAxNzI1NTJiOThmNWM1NTQ0OGJmNjc4OWI5Nzk5MDQzMTc4NjRhNzdkN2I4ZGVmZWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI2ZTA4ODlhZWE1NTM5YTUxYjU3OWQ5ZTViNTdlNDE1NGE5YjZlM2Y1NDUzNGJlYzI4Nzg3NmE5YTU1MzU1NDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxZDk1YTE3OTJhMGZkMGNmZWM0YmJlMjhmMTlmZDMxYTkzNjBiNzI3ZTg2ZGIzMjRlNzMzZTZjYzkxYzU4OTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0a81de409c8643e5a7a928b06436e61c",
+      "statement": "Generated opencode commands keep the !`…` lines and renumber zero-based positional arguments to one-based.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/install.sh#L154-L163",
+          "version": "repo-lines-v1:sha256:3f9325032eb001f721c721c4da7848f5a048f73246d9615d6e2f880fd049679f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2ZGY5YWRmNWNiOWQ3YTlkODUzODgyMjEwMzQ4NmZmNWM0YzFhODNlMzY4YjRjODVlMDI0ZTk2ZDFhNWFmMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNhMTUyOThmOTkyYWVkZDk3YjhjNDk2M2ViNGUxNmUyMWEzYzViM2IxODIyNWJmNDkzNjY1Y2JkZjRjMGI1YTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFiNzU1MTY5ODJkN2U5ZTBiZmMxYjJiZjFmZGE5MWRhMGVkYzg1NTFlYmE0Nzc4ZGJiNjdiMzZhNzBkZGJiMTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a4a395e61fa04ed3b58ecde3b1208e35",
+      "statement": "Symlinks are created only where the path does not exist or is already a symlink into build/; other existing paths are left alone with a warning.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/install.sh#L178-L188",
+          "version": "repo-lines-v1:sha256:baee08604b790cff8b3f74ec8394f245b8bc93932400d26703ce20c6234999ce:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcwMjYyZjA1NzNmZTY1YjNiODAwN2E3YTA1ZjAwNGFlNzY0YzlkYzNlZGVmYjdiOWYwYTkwOGJjOGEyYzg1MDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMyYTgzNDk3MThiNTkyOTI1ZmFmZjhlYzFmODdiMDEyNjg3ZjRkYzE1MjE2MGE0MWRkZTEwMDFlZGZhM2FkMTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZkODJmZmQ4OGY3MjMyNWQzMWM5ZjVhNGY4ZTJiNDJlNDliMTgxZDgxNWQ1NjM2MjdmYjRkM2M3YTRlZjFmYzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e10ebfd7a55d4138b6778aa05d3bcf56",
+      "statement": "Skill checks require the name to equal the folder and be kebab-case, a description, and executable !`…` command paths, and warn about missing allowed-tools and Claude-only syntax.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/install.sh#L212-L233",
+          "version": "repo-lines-v1:sha256:9573a6ad64aaeb05a9fe7d6bdc46e7d247a5cfb294b2376c61dfd09bed0139b6:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYzMjYzMmFhNGFkNDdjMGNiMzkyNTA0YTMzMjE5Njg1NGZjOWU3YmQwMDU3ZjE0YWMxYzM3ZTlhOGU1MTk0ODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY4YWZlMTg3MjczNDc0NThjNGJiM2M1NWFhNGNlY2RhYzIzZjNjMTZkZDNjODRmM2Y4YjExZTQ3NTc5NjlhZWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFhNjU1MWU5YzY3NGRjM2ZlM2ZiYTg1NzgwNGYzNTRmZjg2OTczNTY5ZGNmMjU0Yjg4NDhkYmRhN2UxMTI2MTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_410cd5693bd24c1db788996af0db6473",
+      "statement": "Skill names must be unique across mods because Codex and opencode share ~/.agents/skills.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/install.sh#L246-L259",
+          "version": "repo-lines-v1:sha256:78c20837f4baba8a3fbf1a35c9308fa9add915b4108ef3c5391e8c69d6047d55:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNmZDM4Njk3ZTEzMjc2NTFiODIxYmRiMmZjZWM5NzZmNDg0OTJhNTViMDM1Y2QwMzI5YTM3ZGQ4OTUwZWEzN2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFjMzdlM2JjZDJhNjU3ODZhMDlmOWFjMGZmMWNjMWRkYTFmMjc2ODkyNjE3YzJlYTYzMjgwN2Y0NjU4MGVhNmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8e007f755c454e5a8135728f687f6aec",
+      "statement": "Claude Code installation adds the marketplace and installs each mod as a plugin with the chosen scope, after validating the marketplace and mods with claude plugin validate.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/install.sh#L235-L244",
+          "version": "repo-lines-v1:sha256:72db9ad7d32f0b3564719c443d986409d53d7c529dff4f9ccadd9bbcb5fa80af:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwMDg2OTFlNTk4MGM2NzI2OGMwMDIxOGFhYzEzYjI2YzA5YWM2YjQwMDcwYWEzMjg4ZWE1ZDZmYjM4ZTI0YjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1ZmM5MGZmOGE0NDE0YzU0NDFkMGY2NzdjNWNiZmRhMzhiNDc0ZTUxYmZkNTU5YTU1NTlkZTBmODc3MDU1MjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI2MTQzYjg5ZWViZjBjOTkxZWQ2NzM5MzVmNWVkMjRmZDI3YmYxNTY5ZDRmNmRhMWMwYWU3NDExNGY2ZDUxNWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRhMzg0MjI5YWU4MWJlMjZiYzAzZjNlM2M1ZmUzMTcxMjk3MWEzYWE5MzJiOWUwZDZhMjA3M2E5ZTNhYzFmOGIifQ"
+        },
+        {
+          "resource": "repo://claude-mods/install.sh#L292-L310",
+          "version": "repo-lines-v1:sha256:55008773191259e987ee149997238df266a0af52887499a1da8973016da6e646:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkMDMzNTQwZGE0OTFlZGExM2FkNThjYTY3MjhlZjdkNjMyOGE1MzlmZTM5YTNlMzUwYjJiYTczNjlkNmNjMjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0ZTc2MDQyNmE4ZTNhODYwZGQxNTBlNmMxMTc4YmFhNmJmMTgyNGM1N2ZlODI3M2IwMmI0YTVjZTQ1M2FhNzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM5YjRjNGU5YjA5YzczZmI0Y2RkNTU2OGY3YjM5OTZhYmFiZDJjZjMzZmVlMWQ0MTJjMzExOTU3ZjI2NDdiZjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNjNWU3ZjdlMWI0MTRmZGU2ZDc1Yzg0MDVkZWFmNzAxZDY5ZjM0MDUwM2JjODg1ODI4ZTc5NmM0ZWY3YWJhODIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3f4deb6bd7f845f9be6d3743e73afbe9",
+      "statement": "Uninstall removes the shared ~/.agents/skills link only when every installed Codex/opencode harness is being uninstalled.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/install.sh#L274-L290",
+          "version": "repo-lines-v1:sha256:3d9c264b5e371ea9aafaf686cf2a4a2eeea30899ed783ad1b592ca3532727bd4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhM2RlNjRjYmVmNmFjNzdjNGZhYzE2MmEyNjllODMwYWI4Y2UzOWU1ZDM0NmQwYjZlNmZmNDA1YzU4ZWRjZjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmMzA0NjhlNTliZjc3YTVlZGQ5ZWVjMzQzNGQ1ODU0MTU3MDg1ZmU0MmViYzExMmUzOWNiYzk5OWFiOWVlZjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM5YjRjNGU5YjA5YzczZmI0Y2RkNTU2OGY3YjM5OTZhYmFiZDJjZjMzZmVlMWQ0MTJjMzExOTU3ZjI2NDdiZjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhiYzc5NjlkMGFkNzdiMGYxMTg0NzlmMjQ4NzI0OWQzNzJjNGNhZWUxYjA3ZTdmZGUyMzkzZTFkMGNlMmE0YmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8dad5df974974efc8adb96633069235d",
+      "statement": "new-mod.sh requires a kebab-case name, writes plugin.json, an executable starter script, and a SKILL.md whose allowed-tools permits the script, and appends the mod to the marketplace.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/scripts/new-mod.sh#L15-L73",
+          "version": "repo-lines-v1:sha256:5cbe4621032c5f5c52a0c504b32e7cd403e96955ba6895b47d3fdf2e06c6930a:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzNjJlMjc1YTQ2YjA0YjQxM2I0YzA2YmJlYzBlM2ZjOTBjM2IwNzA0NjBkZjRiZjQ5ZDg2ZDc5ZjBiM2E5ZjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2ODU1MmY5OTQ4NjkzMGNhYWM0NmU0MzI2NzNhMzVjMzJkY2U5ZDRhYjJhNjZhM2RkYjNjNDk1MjhjZTQwODkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxMjMyMjgyZGI4MjJiMmY1OGNkYzBkZWRlMDRjODhkNGE0NDRlMzdhY2NmYzhiMzhlMDBiMmYwZmQ0MjIwZGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_10588fefefa14d74a6365c955e16070c",
+      "statement": "The starter hello skill runs its script through a !`…` line with a matching allowed-tools entry and relays the output.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/mods/my-mod/skills/hello/SKILL.md",
+          "version": "repo-file-v1:sha256:893b78f1cae353a8b9dac811a4d4fef4725078d6c9868b073a6b8ce3118ea134"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-15T21:22:10.058Z"
+  }
+}

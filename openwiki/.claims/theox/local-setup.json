@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:1c548d9ea6caf2d7e474626a75de9a7f3cf52956c2783e3904b6da25b282080b",
+  "claims": [
+    {
+      "id": "claim_9c5101796add47eca2d411983c71e9fd",
+      "statement": "The active gh account cannot see FirstPrinciplesLabs repos, so gh commands against theox are prefixed with a GH_TOKEN from the fp-alexproskurin account instead of switching accounts.",
+      "evidence": [
+        {
+          "resource": "repo://theox/README.md#L9-L18",
+          "version": "repo-lines-v1:sha256:6a9f7c061d52106f12cfe130a4cc201fd2abd780a7023f673f13deeb5fccebe5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzZDhmZDQzYmY0NDE0OGZkNDliNjQ5ZTI1NDY4ZDA5YzI0NmM0NDI5YmEwYjY0ZmY4OTBhY2UwNjM1NTJmMWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2MWNlMWQ4YWRjYzlmNTVlZmE1OThiZDgyYzhmZDRjOTI1MWMxYWM4ZTg2ZDE5MTMzYjhlMGMwNDVlNTk1MjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgxYTU5ZDVjNmMyN2JlYjRjMmYwYjVhMjM0ZTA2OWM5OWJhMDU3NGNiNzUyYjZlYjhhYjk4MzEzODFiZGMzY2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM5YTIxNjcxNGQzNDRkY2JiZTY1YmU3YzNmY2ZlY2I2Y2EyOGRiZGM4ZTg1Zjc1ZmYwN2E0YzU5ZTExMDkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c142a9656bbd41d6af1aa53e491570e6",
+      "statement": "The user-level Claude Code default permission mode is auto, which nested claude -p runs inherit, so contained headless runs must pass --permission-mode default.",
+      "evidence": [
+        {
+          "resource": "repo://theox/README.md#L22-L25",
+          "version": "repo-lines-v1:sha256:9c7f592f3c7f82f2d86ecdab90b752ad63bb425b340814be71f8ea834ef3dc26:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmVkYWQ3NjVlNjY2OGMwYTBlMGFlZjBhNmQzY2I0OTMzODY4M2UzZWY4NWE5OWUyZmFlMWYxNDVhMzI4MDg1MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTEwYjYzOTQ4ODBiMGQ2ZTExMWI5YjMwMTQyZmI5Y2VkMjQwOGIwOGQxNzI4NmIyZWUzOGY5MjBjM2U2ZTA1NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGQ1MzlhMjE2NzE0ZDM0NGRjYmJlNjViZTdjM2ZjZmVjYjZjYTI4ZGJkYzhlODVmNzVmZjA3YTRjNTllMTEwOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiN2QwMWNjYjkwMmVkNmQyYmRiZDJkYTgyM2E5OTRjZDVkOTYwNTNjNDBhMjQzMDEyMjdlZGQ2YTNmNjc2M2E0YyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_31d25b7518a243ad9860b8901954705b",
+      "statement": "Edit(path) permission rules cover all file-writing tools, while Write(path) rules are ignored.",
+      "evidence": [
+        {
+          "resource": "repo://theox/README.md#L26-L27",
+          "version": "repo-lines-v1:sha256:527ef559da80001fb95ace3a27c7be9b7a3bdd48eb348f565e1af6e4a8f725a3:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTEwODMyMzUyOGJmYmViNWRhMTMwNmQ4M2YzOWRkODY5YWJiM2UwODMzZTExNjhjYzE1ODllYjliMDIzMWNmOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTNkYjUwYjJlYjc4OWRkNjQ0MGMyMmIyOGEwOGY0MjU1OGQzYjA4MTRjY2MwZjg1MTlmMmEzOWUxNGIwOWY3ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTkxZmNiYWQyODFhMTNkNzU1NGNkY2UzZTA4YzkwNmM5MzllNjEwMzE5MzdjMDg4MDM0ZGY0MTMzMjA2ZjU5YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGM3ODBjNWRjZThmODVkMmMwZWY0ODY2NjBmNzI3NDA3NDI3YTg2ZDFmNmZkMTc5NmJkMjc0NTczOWUxNjIzNiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_e76a6b92ba6a435fa6e062eda63865ca",
+      "statement": "A global git ignore excludes .claude/settings.local.json in every repository.",
+      "evidence": [
+        {
+          "resource": "repo://theox/README.md#L28-L29",
+          "version": "repo-lines-v1:sha256:9d1750289961abf84aab10f080a0fc9a592e05c6df18cc52cab3650a9445dc0a:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGJmNjcyY2NjMDM2ZTA0NzE4MGY4MTdhZGI2MDc1ZWNiZTA2ZGZmOWJhN2RkOWJjYjA0NjRjZmQzZmVjYzhmYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODA3NzY5ZWQ4ODJhY2ZmNTdiZTFlNjNkOTNkMTczYWIwMjY3YWU3MTBmYjNhODMyYzRhYzMxOGRlZDY0YjAyZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzQzMTBiYjdmMDY4ZDhlNTdhMGJkOTJmMjUzMmZlNTk3OTY5YTYzYmJhNTRlYTJjNDA0MjA2MGI0YzJlMGM2YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjc5YjU3ODAyMTBiODM3ZGMzMzc4ODc2NjQ5YTg4NWRlZmM2N2QzZWVkMDQ2MzIyYzY1NGY4MTU4ZGY2YjU0ZSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a0ac441e3a5d4367a8296e83a640b961",
+      "statement": "theox's wiki is regenerated locally with make wiki through Claude Code without an API key, and make wiki AGENT=codex fails here because Codex is only inside the ChatGPT app and not on PATH.",
+      "evidence": [
+        {
+          "resource": "repo://theox/README.md#L35-L43",
+          "version": "repo-lines-v1:sha256:7808c5e26429d3f690ce34bfe3dae6aec49894fe8d415ffc84f07551a61edaba:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWZhYWM2MGUyZmY0Yzk1MzlkNmVmOWUwZjA2NzczOTAzYTlhMjc0NjEzNzI5ZWNmNDI4OGQyNjE1NzU4MTgzYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODlkYmU4ZDA0MzAyN2IyNjQ0NmE1NzkxOWYyZGI3NjdjMGY2YzUwZTAxZjBjODMwNzFiNzM3MzAwNGNkYmVkOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWFmYjk2MDZmNWIwZDhmNjM0YjI2MDM3OGQ2ZWNlMjUzYjVjMTQ0N2E5YmYxZDA0OTM0OTQ0MGE4YjVlYmYwOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjc2YWIwM2E5ZDk3NWVhNzFkYTY1NmNkNmY3NzRmMjlhMzVhZTQ5YTlkNDU4NzljZWU0MTY1ZWI2YTE5OWI1NyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_e38057a123014256a4c73b5da55b21e3",
+      "statement": "The OpenWiki question command needs OPENAI_API_KEY and fails when run through Claude Code's ! prefix, and theox's scheduled OpenWiki workflow skips generation until the secret exists.",
+      "evidence": [
+        {
+          "resource": "repo://theox/README.md#L44-L49",
+          "version": "repo-lines-v1:sha256:9351fea536f15ed7ffa76e4f7c1e34b0b6633b8ab0082f7e290c8a313cf8da0b:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmEwODc4MjBkNzdhNjc5ZGMzNzc2ZjUxYWU1ZTg4OTU4YjU2OTMyMmIzMjdmNzg2ZWExMzQwYTRjZmUzOWZlNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDc0MGE5ZWI2YzAxYTM4YjNiYTkxZTFmZjVhYjVhMjdhNGUwOTE5Y2ExOTczMTYwYzExZWJhOGRkY2ZiNGE3MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjk2NGNiOGNhMjc5NzI4MDkxOWUwMDI3YmVhMjEyYTY0ZjMwNTE0NTEwZmE0Y2Q3ZWU0YmIyZWMxYjk5NGZlOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2Q5NGE2ZTMxZmFiZTM4ZjAyYjYxNTA4MTZiYjJlNTlhZmU3MzZmOGViZmJmN2U0Zjk0NjExMmEyYTk2NTkxMiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_4c15ce2cf64d4b6ab49fef87fdacf2bd",
+      "statement": "On this macOS machine there is no timeout command, zsh does not word-split unquoted variables, and /bin/bash is 3.2 while bash on PATH is 5.3.",
+      "evidence": [
+        {
+          "resource": "repo://theox/README.md#L51-L58",
+          "version": "repo-lines-v1:sha256:b7317e0d5adfccbddc02e4194ef23b8ac55a0c0c955846ba1dd1a618466b74ce:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmI4NzU1NDlmMDYxNmQ2NmQ0NjI1YzQxYzY4MDg1ZDE1N2Y3NTkwZDU2NzI0MWU5Y2Y5ZjdmOTAxNzA0ZjNlNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzAxZDkxYTE3MWE4ZDk2Nzk3ODQ2OWE5YjY4ZDU1MDJkMWNiNmJjZWU2NDYwNGM1YTU0OTExNDdkODgzZTIzMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjgwMDkyYTE0ZTJjYzEwY2ZkZWFmZTUyY2RiZmFjOWVmMGY1MTlkMmZlMGE5MThmNGVhMTMyZWZmZTAwZmFmNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3ca0020147544463b1c5b0ac33cd8580",
+      "statement": "The theox checkout has the generic agent board installed for Claude Code only with gh user fp-alexproskurin, with settings in .git/agent-board/config.json and team conventions in theox's docs/agent-board.md.",
+      "evidence": [
+        {
+          "resource": "repo://theox/README.md#L30-L34",
+          "version": "repo-lines-v1:sha256:d907ceacee1f48184bfc9e8e76efe30472d77a42d20fb7bd7ac5ee976d9819c1:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDNkMTgzMjlhNTE5NGJiNWM4M2Y3NWU5N2QzMzkxZjFiMWVkOTBkMGNjMDgxYmEwYTRiMDk3ODg1ODc2MTg0MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjdlMDUyYzM0NmIwN2I1ZDUwYjQ3OWFhNjY4YTMxNTgwZDY2ODk5MGY3MGQ3MmU4ODUyMzY1ZDUwYzBkMDAyMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGQ3N2RhOGZiMmIxNGViMzA2NTI2NjEwNDIxYWZmNDQwMDdmODQ4NTZlOTIxNzBmZDc5YzllYTI3YTIyNGM1MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMWFmYjk2MDZmNWIwZDhmNjM0YjI2MDM3OGQ2ZWNlMjUzYjVjMTQ0N2E5YmYxZDA0OTM0OTQ0MGE4YjVlYmYwOSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-15T21:22:10.058Z"
+  }
+}

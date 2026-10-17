@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:e99452df41dcc624f9f5949f0ad7da5593086a2dbad4a56135793ffa474fb306",
+  "claims": [
+    {
+      "id": "claim_ec4014f16e8145fdaeafc5ab0920a378",
+      "statement": "The template separates shared, committed pieces (the conventions document and an AGENTS.md section) from personal per-checkout harness integrations and user-level skills.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/README.md#L1-L21",
+          "version": "repo-lines-v1:sha256:cd6615fa431a836d2624b588f737225a5a5d652c1b45c31beed29e9b293bef92:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdmYzQ4YzM1MjVkMjA3ZTBkMTM4ZTVhYWQ4ZmY2OTlhNTc2MWIxMmZkMGJjNzhkZDBlZWJkMjU3YjhlOWEzNmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ3YmQ3YWFjYjhiMzA4OTU0NThkMDQwODVkNGJiYTFiZGQxYmUxNWNjZGMxNTBjMDk0OTExNWEwZWM0ODRhNDAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_73b32b80261c4195ab06bda81748195b",
+      "statement": "init writes the conventions document filled with repository and label, keeps an existing document unless --force is given, and replaces the marked AGENTS.md section in place on re-runs.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/install.mjs#L289-L334",
+          "version": "repo-lines-v1:sha256:6e58e27da58ce6c2c90b5c7b11f10c660f0e689ae241fb1a315b18ef6cc57265:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyMWZkMjU0MjZmODQ2NTk0ZWQyMzU3OTZhYWY5ZGFhYzcyODNkMTU3Mzg0ZTNjN2Y1YWFiYjY5MGYxOWQxMDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiYmI5NTNjYTUzMTE4ZjBjZDdkNTBlYTRlMDg3ZmM4MGMzYTJlNzAxMTRhMTAzYjgzNzgzYmY2NzE1Yzg1M2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNmZjUyOThjY2NlYTU4YjJjZDg0OWNjMWZiNzZlODQ1MzhmNDljODczOGJmOGE3Y2VhYzRlMmU2ZDY4YTZkODgifQ"
+        },
+        {
+          "resource": "repo://agent-board/install.test.mjs#L34-L50",
+          "version": "repo-lines-v1:sha256:1cd188ebd7e0c312ad99be5732148e5356f55b6491469cd2bf789c41268f7ef6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJlYWZmNzE1NTNjMDE3NWIzYjg3OWM1YTM1NTlmM2I2ZjVkMzUzOWM5NWIzYzdmY2MwY2M5ZDhlMTdjMTNiZjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkNjdiZmU4MDJmMjE1NDBmY2M5M2ExMjlkYjhhZDYzZjY3MGViYTRkZTNiNGY0NDVkZWI4ZTAyYWIxODI5YjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNmZGRhNjk1ODM1ZWU5NDRjZTUyYTNhZjkyMTRhOTVjM2I3ZDMyNWNmNTFiMTc4YmE2YWMzMDc5ZTEwYjE0MmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fec12f4e54d1404b8197e78fe399746f",
+      "statement": "install writes per-clone settings to the git common directory and installs each selected harness, defaulting to every harness found, while re-installs replace only the board's own hook entries.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/install.mjs#L278-L346",
+          "version": "repo-lines-v1:sha256:a536a37b595801cf7373d3813de38b74aba76ed9a03b7104506ea4d3486cff09:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY3NmUzOTFmODhmZGI0ZTI5OTRkMWYzOTA3YmJiOTc1ZTBkMjk3Zjk0NWYwZTUyMjE4MWMzYmY4NzcyM2ZlMDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEwYjViM2I2MzFmM2Q5NzgzMjE0NWI2OGQ3NDEwZmM1ZDQzODM4ZmEyYTU5ZWFmMzQ5YTUzYWIwNWRiNTJiNjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA4M2MxY2MwYTM4ZTcwMjRhNjIwYzYzNzljZjVkY2Y2MjhkZTFkNWUyMjIzMDJkZjMwNWY0YmM3ODBhZGUwOGYifQ"
+        },
+        {
+          "resource": "repo://agent-board/install.test.mjs#L52-L69",
+          "version": "repo-lines-v1:sha256:ffdbe9756ec1dee009b6278ddc166525b086723478966df41574bdbd075120bd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhYjA5ZDQzYzU0M2Q2MWM3ZDIzYTE4ZjE2YTAwNzIyMmE5ZDUyMTE3NDIyYmMzNWFmMzc4NzQ3ZDljMmRiN2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI3ODA0MTQ0YTZiZjE0YTcxN2M2NWFjMWIzYWNiMjg0ZTA4YzJhOGExNDFhNTlkOWE2OWVkMmQxMmM2OTZiY2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQzZWUyMDJmZGI5NDk4YTIwZTM5MjA0NWRhOWE1Y2YxNjFiNjRmYWQxYzgyN2I3YjVmYTI3YjdkYmUzMjE2ZjMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_163f7ff304ed489da1b4daa2471996c9",
+      "statement": "Personal files not already ignored are added to the clone's info/exclude, and the installer refuses to modify a hook file that the project commits.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/install.mjs#L104-L117",
+          "version": "repo-lines-v1:sha256:88a0ec8c5753effd9e21b58776d784d85c80f9ff77e01ecdfdc3dc635c7b1fa4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjOWU0OGJkNmQ5Y2JiZTE3NWJkMjRhZDUxNTI4YjgyOGVmZDkyZGY3NDA0Y2I1YjlhNjAzZDk4YTkwYjI1MjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM2Mjk5ZDJkNmFhZWY2YzY5YjkwMjcyOGQ5OTJiMjM0NmY2YzU0OWZiMTI5OGIwMDAzNWFhOTA1Y2U4MjlmM2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU4ZTlkNzJmOTIxN2I2ZDQ2N2MzZWY1YTA4ZGY3MDViOWEyMmUyZTA1OWYzNDZkYTUzNWU2MjAwOTQwZGE5ODIifQ"
+        },
+        {
+          "resource": "repo://agent-board/install.mjs#L247-L255",
+          "version": "repo-lines-v1:sha256:ddf4a151ce6c4bc4cecb1e5090d3dc88f4436e62aac2d4a43550fba22ac1e028:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmY0MjVkZTZiOGNiYmVmYTcxNGJlZWFiZDM1YjdhY2YzNjUyYTFjZjRjNjk1YmUyMjRlYjI4OTA0OWU4ZTM1YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmI1ODBlOTY0ZjgzYTQ3M2Y0M2Q0NDM4NDYyOTQ5ZDY4YjU2MDBmZGE3ODdmMTYzNzQ1ZDAwZGU4OWNiZjM2YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzNmNWRmMTg5ZDgyMTM2Y2UxNzU1YTlkYmMyOGFlMDFhYjgxZmVlZjEwMjk2MjMyZDFlOTc4ZjZlOTIyNWVhNCJ9"
+        },
+        {
+          "resource": "repo://agent-board/install.test.mjs#L138-L146",
+          "version": "repo-lines-v1:sha256:e9f43c9e1bd84a1ddc168654fb78df5b6f5161aa5d4592b65ac5ef78776bd109:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzJlMDkwY2YyZDcyODkyZjAxNjNjNGZkM2NjZDU0Yjk5YjhlOTI4NGM0ODc4MWFmZDdmZTJjZjU4MzNiZGJjMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjZmNWI0MGIxNTg0NTdkMTc4NjRmMjE3OTA3ODZkZDVhMmVjZGI2NGI2NmE2NTFmNzg4ZDRlMjVjZDMzMDNkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmJkN2U2ZmIwYmQ0ZTRlYWIzYmVmZTcwMmYzYWNjYWZhMGVkZDMyOTJjNmMwZWQ4ZjIyNjJlODQ5NTMzNjYwMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzE2YWIyNmIxMjIwYTU1ZGE2YmYyMjBlYjVlMmZlYmVjYjc1MzViZDFjNjBiMmQ1YmZkZmExYzFmMjI2NWQ0YyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ee195faf235a401aa47478342e32f248",
+      "statement": "Codex integration writes project .codex/hooks.json, reports when the project is not trusted in Codex's config.toml, and tells the user to review the hooks in /hooks rather than bypassing either gate.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/install.mjs#L176-L210",
+          "version": "repo-lines-v1:sha256:ec59021d63b4bd3c6797f6d3d0da64a76a36cf30eb31f5009608d042a0f9f015:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxZjYyNGI1NDJkMzgzNGIyZTIxYWUyNWE5NmY4YTliYjU3MTA5YjNlYjE4NmRjMTM5NGQyMWM2NjFmYjUxYzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJiY2I0MDNjNGY3MDhjYjFhNTYyMjgzYTY3ZDRhYTk3MmQwMjg0ODBmODFhYjUzYTRlNzNhZDZmMzM5YjQ5ZDcifQ"
+        },
+        {
+          "resource": "repo://agent-board/install.test.mjs#L99-L123",
+          "version": "repo-lines-v1:sha256:c1524971b440972ee228afcc3796b866e7e88f5ba32725503657eaaf5fcd5399:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiNWM1ZDk0N2NmNmQ0N2VlYTM0Njg2NjI2ZWUwNjdhOTE1NTI1NDU2ZWJlNDU0ZTdkMjkzZjE4MDAyMDdiZmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcwN2Q0YzEwMDJkNmNhNmZmMTkwMTMwY2IzMzY5YmE0OWQ5YTI3NmMyYWIyZDAzZjMxY2ZhNTU1NTJjMmJiNDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY4YjUyMjY4YjhiZGFiYTQxODc4MDc0Yjc0ODMzZDE1YWZmNzkzODM0M2FhZGVjYmZjZTdlNmE0ZDlhMmRlMjgifQ"
+        },
+        {
+          "resource": "repo://agent-board/templates/codex-hooks.json",
+          "version": "repo-file-v1:sha256:77d546b26f4f24f1d74a731afab1f3cdd15db5951dff1877a75cb00faa8f4351"
+        }
+      ]
+    },
+    {
+      "id": "claim_4dfb21566f824eb7b15884f811e03e1f",
+      "statement": "The opencode integration is a 2.x plugin that appends runtime notices to tool results, skips subagent sessions, and re-prompts the session once on session.idle when the stop check blocks.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/install.mjs#L212-L236",
+          "version": "repo-lines-v1:sha256:9f5e50c2a287eb6957980a0deeff8902135a7c8cbc0e962a3fd368a5b4118c4d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2OGU1ZDRhNzc2MTE0YThkMGMzOTM1OTA5YTg2ZTY0NTA4OWEyZGUzMzJmOGE1MmVlMTRiZDA4YWRiZmNhYjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYwZjRiYWNhYmIxMjY1MDM2ZTgzOTIxMmMzZjk4MjQ2NzBkMGQxYjEzOGNhYmZlYWYwZjk1NWUxZGZmNzEyODUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNiNDJmNDg4NmQ2NjJjMTdiN2ViMzY1NzUwMDc0MjRhNmRhOTQxY2Y5YzYxZDIzMDU2Nzk2ODE2ZjJjODEzYmIifQ"
+        },
+        {
+          "resource": "repo://agent-board/templates/opencode-plugin.ts#L25-L75",
+          "version": "repo-lines-v1:sha256:1362b5992ce04636904177d731b6263425bdd77d8aad969678a7260704bec0df:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3OTcxMDdhMzlmZTMwNGY5YzBhMTU2Y2JjMGQzZWMyMmRiODlkZGZhNzAyMjE4MTRmZWU5ZmQyYTNlZDIzMjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNjNjBmMjFjMjQ3ZGNhZmJmZjZlNzQyNzY1MGNhYTc5ZmUxMWRjMTE5ZDRlODhjYTQ4NWUwNTQ1NGJiOTM0MDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5e679cc60b1d4ba1a491668744cc9c67",
+      "statement": "The skill command installs an on-demand check skill per harness skill folder and never replaces or deletes a different skill with the same name.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/install.mjs#L361-L377",
+          "version": "repo-lines-v1:sha256:0860c60d26eea3f2fd347671aa4bd74601cd3ddfc56673910c35050ed65a686a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFiMTZiMDc3NjRjMjQ0NDI1YTUwYWYxNjg4NDc1ZjljMzYzM2JhYjk2M2ViY2YwMGFiNTYwZTU4OGVkOWVkNWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYwODFjNDVhMWY4NGRmYzMzZjUyMTNjMGE0NGI2ZGY0MTdkYWIzNDM1YmI0MDFmMTA1MDQxMjMzZTlmNzZlNDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM5NTM2Y2Q0MThmN2I4MDdhNzhmNDcxODE4OGJhMWNjM2NmNzdkYjQxNWFlYjZjYTFkMzEzMmVjOWFhNjRhZTMifQ"
+        },
+        {
+          "resource": "repo://agent-board/install.test.mjs#L88-L97",
+          "version": "repo-lines-v1:sha256:fb9ac8b4646c481cf20c3edd4f16b0af46e9097a4bbd5df761ae609148178355:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhjYTZmZDI3ZDllNDc2MGM3NjVkOWUxNGIwNjRiYTQ0YTE4YWY3ZjA0N2VkNjJmY2NlMGI0ZGNiMjgyMTAwZDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRhYjdiMzY1NTZiMTlhNjkyNjhiYjVlMmM1NzM4MWU4MDZlZDhjOGRmYjhiMjA2YWNlZGYyYTU2MjgyNzQ1MGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZhMjNlM2FmZWRhZmQ0ZmJjMDNhMjJlMzliNWRkY2UwMWFjZDBmZWFlNWU5MDFiNzZlMDg5MWUyODhlNzJlZmIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_76099c366f4d4914ae56ee6ec42f56c2",
+      "statement": "Uninstall removes board hooks including the earlier board-hook.mjs entries, preserves other settings, and deletes the config once no harness uses it.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/install.mjs#L119-L153",
+          "version": "repo-lines-v1:sha256:f1a364877ac2b65708c0fa0a754796d5ccf5ea8d86a5e1251d503d929334685a:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2YmEyYjU5OTY3MzJlNzEzOTBkM2UwY2M1YjliZmRmZTU4YWUzZDZkMzgzY2VhYTMyNzRiMzc1OTY1NWRlYmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjliYmRmYjVhZGNiYjUzNmViNmE4Njg1N2ZiZDQxNjQ0MmZhYTRiZjdkODcxN2IzOTEzOGM5ZjYxYzZmZTllYWQifQ"
+        },
+        {
+          "resource": "repo://agent-board/install.mjs#L348-L359",
+          "version": "repo-lines-v1:sha256:1161e736bb6078f068fe2ab6ebac523f76bffd1cc5acea37e51504d282363f8d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwN2NjMTViNDE1YzQxMWMzNzU5YjFlYzMxNDBkZTJlNWM4ZjgzOWRjNDRiNTkzN2E1MzdlNTMxYjBkMWQ4NGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM4Yjk1NGU5N2JhZTJhZjBhMWE4NmM5ZmYwYjVhYTM0ZGEzOWNlNTU4Yzc0N2NiOTBiMGZkYmIxMjJjMTZjZGQifQ"
+        },
+        {
+          "resource": "repo://agent-board/install.test.mjs#L52-L79",
+          "version": "repo-lines-v1:sha256:650014a51c36b5a07c897651a9cf1fbbf0869b8fe5f7a9ddd18c0b2f783d86ad:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhYjA5ZDQzYzU0M2Q2MWM3ZDIzYTE4ZjE2YTAwNzIyMmE5ZDUyMTE3NDIyYmMzNWFmMzc4NzQ3ZDljMmRiN2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI3ODA0MTQ0YTZiZjE0YTcxN2M2NWFjMWIzYWNiMjg0ZTA4YzJhOGExNDFhNTlkOWE2OWVkMmQxMmM2OTZiY2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjljZTgwNGY1ZmE0NThjOTdlZmYwNTc4NjkwYzA3MWE2MWNkNDViNjg2NDdlZjdkZTFhNjZjZjZjNjQ2OGQ3OWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_94849edfb97d440dbf99515ba9c0d7c0",
+      "statement": "Only Codex SessionStart was exercised live; the Claude Code hooks in a session, Codex PostToolUse and Stop, and the opencode tool-result and idle paths were not yet exercised with a live model.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/README.md#L82-L135",
+          "version": "repo-lines-v1:sha256:df38d055144681ddae8e679e35f703e54db9c1665bfa540e410bfb1701f52483:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3YWNhY2MzZmI1ZjMwYTBiMzJkZjEwZDczNmNjYjgyNjk0YzY0ZDAwMWI0ZmY1Nzk4NjQ5MjhhNWQxNGMyNzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ5Mjg1MzQzMDg5YzYxMTM3MGVjNWU0YzFkYzU1MjdlOWUwNmI4YjY4MTZhZWMyNzc2NjEwZjk2YjIyODMwZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3N2RiNDAxOGI2MzVmZGE3YzUzOTBiZmJkNzlmMThiMzY0MGVjODE3Njc1ZmE1NDllYWQ3ZmNkNjgyNzc5YWIifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-15T21:22:10.058Z"
+  }
+}

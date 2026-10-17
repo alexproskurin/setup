@@ -1,65 +1,79 @@
 # claude-mods
 
-Personal Claude Code mods (function-hook plugins). Each mod lives in its own folder under `mods/`, and this folder is a plugin marketplace that lists them all. It lives inside the `setup` repo.
+Personal mods for **Claude Code, Codex and opencode**, written once.
+
+For each mod you write two things:
+
+- a Claude Code `SKILL.md`, whose `` !`…` `` line runs your code;
+- the code itself, in any language (TypeScript via `bun` works).
+
+`install.sh` installs that into Claude Code and generates the Codex and opencode versions. This folder lives inside the `setup` repo.
 
 ```
 claude-mods/
-├── .claude-plugin/marketplace.json   # lists every mod in mods/
+├── .claude-plugin/marketplace.json     # lists every mod
 ├── mods/
 │   └── my-mod/
 │       ├── .claude-plugin/plugin.json
-│       └── hooks/
-│           ├── hooks.json            # { "modules": ["./register.ts"] }
-│           ├── register.ts           # the code
-│           └── register.test.ts      # claude plugin test
-├── install.sh                        # validate, test and install mods
-├── scripts/new-mod.sh                # scaffold a new mod
-└── CLAUDE.md                         # context for agents working here
+│       └── skills/hello/
+│           ├── SKILL.md                # the definition (Claude Code format)
+│           └── scripts/hello.ts        # the code
+├── build/                              # generated for Codex/opencode (gitignored)
+├── install.sh                          # check, generate and install
+├── scripts/new-mod.sh                  # scaffold a new mod
+├── AGENTS.md                           # context for agents
+└── CLAUDE.md                           # imports AGENTS.md
 ```
 
 ## Add a mod
 
 ```sh
-scripts/new-mod.sh standup "Summarize today's commits"
+scripts/new-mod.sh --ts standup "Summarize today's commits"   # TypeScript script (bun)
+scripts/new-mod.sh standup "Summarize today's commits"        # bash script
 ```
 
-This creates `mods/standup/` with a `/standup` command stub and adds it to the marketplace.
+That creates `mods/standup/skills/standup/SKILL.md`:
 
-## Develop
+```markdown
+---
+name: standup
+description: "Summarize today's commits"
+allowed-tools: Bash(${CLAUDE_SKILL_DIR}/scripts/standup.ts *)
+---
 
-Load a mod straight from its folder. It reloads every time you save:
+!`${CLAUDE_SKILL_DIR}/scripts/standup.ts $ARGUMENTS`
 
-```sh
-claude --plugin-dir mods/my-mod            # repeat --plugin-dir for several mods
-claude --debug --plugin-dir mods/my-mod    # see skipped hooks and refused results
+Reply with the output above exactly as printed, and nothing else.
 ```
 
-Check it before loading:
-
-```sh
-claude plugin validate mods/my-mod   # what it hooks and calls, and what the engine would refuse
-claude plugin test mods/my-mod       # runs hooks/*.test.ts
-claude plugin validate .             # the marketplace file
-```
-
-Type definitions are generated in `mods/<mod>/.claude-plugin/types/` the first time Claude Code loads the mod (gitignored). After that, `tsc -p mods/<mod>` type-checks it.
+Write the code in `scripts/standup.ts`. Change the last line if you want the model to do more with the output (for example, "Summarize this as three bullets").
 
 ## Install
 
 ```sh
-./install.sh                 # validate, test and install every mod (user scope)
-./install.sh my-mod          # just these mods
-./install.sh --list          # the mods here, and which are installed
-./install.sh --uninstall my-mod
-./install.sh --help          # --scope user|project|local, --skip-checks
+./install.sh                    # check, generate and install every mod into every harness found
+./install.sh standup            # just these mods
+./install.sh -H codex,opencode  # just these harnesses
+./install.sh --list             # what's installed where
+./install.sh --uninstall standup
 ```
 
-This folder is added as a local-folder marketplace (`claude-mods`). Installed mods are read straight from `mods/<name>`, so after an edit, run `/reload-plugins` in a session. The script is safe to re-run.
+| Harness | Gets | Use it | After editing SKILL.md |
+|---|---|---|---|
+| Claude Code | the mod as a plugin (the source itself) | `/my-mod:hello` | `/reload-plugins` |
+| Codex | a generated skill in `~/.agents/skills` | `$hello`, or just ask | re-run `./install.sh` |
+| opencode | the same skill, plus a generated command in `~/.config/opencode/commands` | `/hello` | re-run `./install.sh` |
 
-## Share
-
-`/plugin install <mod> --marketplace <owner>/<repo>` looks for `.claude-plugin/marketplace.json` at the root of the GitHub repo. This folder isn't the root of `setup`, so to share mods, publish `claude-mods/` as its own repo, or add a root-level marketplace to `setup` that points at `./claude-mods/mods/<name>`.
+Script edits take effect everywhere immediately. In Claude Code and opencode, the `` !`…` `` line runs before the model sees anything. Codex has no command files, so its generated skill tells the model to run the same command. In all three, the model then relays the output.
 
 ## Permissions
 
-A mod's `$.process.run`, `$.process.spawn` and `$.fs` calls run as your OS user. They do **not** go through Claude's allow/deny rules or permission prompts. Calls made through `$.tool.call(...)` do go through them. Review any mod before installing it.
+- **Claude Code:** `` !`…` `` commands must be allowed by the skill's `allowed-tools` or by your permission rules. Otherwise the skill aborts.
+- **opencode:** the command's `` !`…` `` runs outside opencode's permission system.
+- **Codex:** the command runs under Codex's normal sandbox and approval rules.
+
+Review mods before installing them.
+
+## Share
+
+The marketplace file has to be at the root of a git repo for `/plugin install … --marketplace <owner>/<repo>` to work, so publish `claude-mods/` as its own repo to share it.

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:971a2d14db5ba184ce20433686c8837347bac279a13c559f5171c0166faef1d2",
+  "claims": [
+    {
+      "id": "claim_c378f7b081344ef5912577c571955540",
+      "statement": "The setup repository is organized as independent areas: claude-mods, a reusable agent-board template, theox local setup notes, and the generated wiki.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L1-L11",
+          "version": "repo-lines-v1:sha256:c4950baacc7a6ff9b0d8a09b8f624008e37b900eaf4d45e0e097d87c3d67f0c6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVhNGY0MjFlZTcyMGYxMzNmMjNjMGU4MjJlYWY0ZjA0NzU2MGY2MjI1NWI0NTE2MjRhM2VjMTE0NTA4NDQ5NGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiYmRjNzYxYmQ2M2JiMmRjZTMxMmRmM2VlOThlMTU1M2ZiZDI4MzgzNDNkNGI2MTc4YjgzMGVhM2Q3NDNiYzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_72af4f08c22246339c18809bda83425f",
+      "statement": "A mod is written once as a Claude Code SKILL.md plus a script in any language, and install.sh installs it into Claude Code and generates the Codex and opencode versions.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/README.md#L3-L10",
+          "version": "repo-lines-v1:sha256:ab7b9f5e02b33683a4e06fd0b424618a43204225a04cfb6c404acc88c0889e92:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTBkYmUwZWYyY2JlMTk4NTEyYTBmYjlhZjg2YmZlOWZiMjdkNDgzYjgzM2ZkZWE1NzEwYWVkZmMxYmU2MDFlMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzdhMWIwZWQ1NTczNDkyNWRjMWI1ZWZjNWRlZjdjOWQ0YjQ3MzY5ZWQ2ZDhmOGVlY2I0NzBiZDAwNzEzOTZjMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTcyOTM5MzAyYjE4MzEwNGU0ZDY2OGFiMDU5ZmJjNjE2ZDg3MTUwNjAzN2Q2MWQyODUxZTVjZTcxMDAwNDQyOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzY1NzdiY2VkMGY5NzMyOTJlYjNjOGRiMWJhZjY5OTMzYzVhYzAyODZmNGM5MjY5MTZlOWM5Yzg0NjdlMmZjYiJ9"
+        },
+        {
+          "resource": "repo://claude-mods/README.md#L51-L67",
+          "version": "repo-lines-v1:sha256:149107984a28277d747f4cc99e708b4f9afcc082c48b379e7752246ecbef0370:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjNmRlOTA4MmI3ODI4NDAyOGVmNTBkZjZmNTk0Yzk1YTkxNjc2ODdmMDc4MmZiNjhhOWYyNTAyNWIyMDdiZTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5MmU1NjJmZmYxNWE1NzQ4ZmRiYzY2MTc1MmY0NWMzMWNiMzNlNmJmMGU2ZTcyNDM5ZmY3OTAxNjQ5Y2UwYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkxN2IwOGIwMGQ5ZDdhZWZhOWRkZTU3MWU2NjNkNGUyMGJkYjIyNzZmOWMxNTU2Yzc4MWYzZDVmYjY0NGRmYjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU0MTZkMTJkNzQyYzYxNTY2YjllYTUxODBlY2M3MTVmZGNjMGRhZjRlZDBjMTE4MmFhNGJjMDg0ZTRjOWJmODQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_149a418aea2a498fb91880ea72e331c6",
+      "statement": "New mods are scaffolded with scripts/new-mod.sh, optionally with a TypeScript script run by bun.",
+      "evidence": [
+        {
+          "resource": "repo://claude-mods/README.md#L28-L49",
+          "version": "repo-lines-v1:sha256:11892a7645f67d36db62a7cf907b5caccb8fd3c3d378565fcfc574a1e87ba060:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1NDAxZmI4MzIwODg1ZDYyNzdjYTg4NDM2ODA0MmZiNTljYzhiYmUxNjJkODFmYjllYWZmN2M2NTcwZjM3OWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzMTM0MDBhZmQyZGI4MDQyZTA4MGNmMTA2ZmE0YTRjYjlkMWIyZDEyMTM2M2Y3Y2JiM2E2Nzk4YWMxMjUxMGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZmYTU1MjQwMWJiZDk3MmU1YzE1N2UzYjk1YzFlYmJkMTFlZGNmM2Y3MzY1Njk1NzE5ZmY1ZGQwNDJkNTc3NjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3N2Q3MDJiMGE5ZWI2ZjBmNmY0Mjc0MjFkMmY1ZGRmYzNlM2Q1NWQzMWUxZmJiN2U1MzI2YWQxZWQwOTE3ZGYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_84a03a04892847e39eb081445d958a17",
+      "statement": "gh commands against theox on this machine need a GH_TOKEN from the fp-alexproskurin account, and theox's wiki is regenerated with make wiki.",
+      "evidence": [
+        {
+          "resource": "repo://theox/README.md#L38-L39",
+          "version": "repo-lines-v1:sha256:2252ce32a50979b0e08bf216f626e245da81f9983040a26229e211e9e74acffc:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGE3OGRjYWQyZTc1ODI0MDM5ZjNmMTU1NGE0ZjYzMWZkNDYxY2RmMjUwYjUyNjNiZWRiMzY3NTg3Y2FmMGMyNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDBmOWI5YjU0Y2JiNDQ4NDQ5NmNjMTMxYjg2NzkzMGI3ODc1YzY3ZmUxNjU1YWVhZmNkZWVmOWIxMGZiMjkyYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODk0NjdiMWNhNDA4ZjE2ZDM1ZTAyNmJmNGQ0MWQzZDVhOThkNWUwZTQ1NjQxYmY3YTg5ZWQ1OTk4Mzg0OWVhYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTk1NWI1NzA2Mjg4YWU2ZWJiZWE2OTMyNWEzZDQ3MTg1NjcxM2YyN2JjMjIyMWI5MDg2OTU4MjRiNzhiMmJiOCJ9"
+        },
+        {
+          "resource": "repo://theox/README.md#L9-L18",
+          "version": "repo-lines-v1:sha256:6a9f7c061d52106f12cfe130a4cc201fd2abd780a7023f673f13deeb5fccebe5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzZDhmZDQzYmY0NDE0OGZkNDliNjQ5ZTI1NDY4ZDA5YzI0NmM0NDI5YmEwYjY0ZmY4OTBhY2UwNjM1NTJmMWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2MWNlMWQ4YWRjYzlmNTVlZmE1OThiZDgyYzhmZDRjOTI1MWMxYWM4ZTg2ZDE5MTMzYjhlMGMwNDVlNTk1MjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgxYTU5ZDVjNmMyN2JlYjRjMmYwYjVhMjM0ZTA2OWM5OWJhMDU3NGNiNzUyYjZlYjhhYjk4MzEzODFiZGMzY2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM5YTIxNjcxNGQzNDRkY2JiZTY1YmU3YzNmY2ZlY2I2Y2EyOGRiZGM4ZTg1Zjc1ZmYwN2E0YzU5ZTExMDkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b800794e2d2d4a4795688db5efd889be",
+      "statement": "A project introduces the agent board with install.mjs init, and each person enables notices in a checkout with install.mjs install for the harnesses they use.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/README.md#L22-L54",
+          "version": "repo-lines-v1:sha256:8a12d1ea3ffda16d96084ebbdcf1f052172ee5363e4e71fc041ccafa87efa38d:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhYjRmODE0ZjU1YjUwOWY0M2I4ZDBjYzg0OWRlZDk5OTcxMTE0NzMxMzRjZmUyYzg2YjE2ZmYxZjc3ZTVlNmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1NTA0YzEwMzhmZjg5ZDIyNTlhODI5ZTYyZWQ0ZmRlNzIyMjk0ODA4MGRiNjQ5OGI4ZDUyMjMzMDlmZmQ3M2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzY2U1ZjkzMTBkNWEzYmM5OTk0ZjY4MWI5YTljODM2Yjk3M2ZlYzE1ZTZkYTJmZjdhMDIxZGE1NzgwNDY5ZDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFlYjEzYmRlMTQzYTY3MWVkYmJhYmIxMjkxNTEwZTkzNzJlNmU4M2Q1ZTIxNGJjZmE1YjZhZGExZDljZmM0ZjYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_41c069beb6e04e059d42d6797a580c07",
+      "statement": "The setup repo's wiki is regenerated by asking Claude Code to update the OpenWiki, because the scheduled workflow skips generation until an OPENAI_API_KEY secret exists.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/openwiki-update.yml#L1-L33",
+          "version": "repo-lines-v1:sha256:0ddcb53c816dcad4fdf38b3bb406120c43394e71f447b553a991e2c6f7d63286:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2MDI3ODdhZjZkY2MwODM0ZGUxMjFjYmIxY2I5NWY5NDU5YjcyMWVhYjAzNDlmMTA1MDFiOTk2YzFjNzdmZmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmNTU5NzljZTczMDIwMzNlNmIyZmQ3ZDg4ZjUzN2EzYjhlMDkxZWEzMDVjODExZmZhMTI3NGJmNTc2NGVhNWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFiN2Q1YWYwZjliNDY2ZTg1ZjU3ZjNiMzZlYjAwN2NiMTJmY2FmNzhmODNkN2UyNTBjY2FiN2Q0ZGZjYzc5NzQifQ"
+        },
+        {
+          "resource": "repo://AGENTS.md#L14-L18",
+          "version": "repo-lines-v1:sha256:7ffc99c0876429736efd04586bef121b830fe8e93386a86ae174b7d79c89c235:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjAzM2M4MzMzOGFlMDdjODk4MzJjYWE3OGY5MWQ1NjM4ZmRlNWI4MTJlYWI3ODY0YTQ3ZmI1M2I1NTkwNzYzYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDMwMzk0NDAzZjUzMmNmNWQ3ZmU1NWZkYzM3ZDQzZGVjMjliZmQ5MWFlNWYwZjIyMTM0NWY1NTJlZDZlM2VkZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjkzOTEyY2QzYzMzZWRmZDIzZDM3NjRlMTdhYjI5NzQ3YjM3OTM3NDIzNmM2NGE3NmIwYTVmZmU0OGFkMzgwZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-15T21:22:10.058Z"
+  }
+}

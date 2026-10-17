@@ -1,6 +1,8 @@
 {
   "name": "my-mod",
   "version": "0.1.0",
-  "description": "Starter mod: a /hello command that runs code on the host",
-  "author": { "name": "Alex Proskurin" }
+  "description": "Starter mod: a hello skill whose TypeScript script runs in Claude Code, Codex and opencode",
+  "author": {
+    "name": "Alex Proskurin"
+  }
 }

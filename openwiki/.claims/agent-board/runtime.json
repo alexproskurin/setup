@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:1b1b5e64be3ffccc135e00cfcd5e823517f6d6c4e911cf85f7d2feebd17fb032",
+  "claims": [
+    {
+      "id": "claim_f98533d796d24e21ab3717b1fbeafb23",
+      "statement": "Runtime options merge built-in defaults, then the config file in the git common directory, then command-line flags, and the repository falls back to the GitHub repository of the origin remote.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/agent-board.mjs#L82-L106",
+          "version": "repo-lines-v1:sha256:b81000cdf9159ee6cdb79f569aa06f42ea0eafca22c457294a74eca71cc1ca4a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2NTNmYTNmMzFiNDgyN2E4ZTlhNjljNDViYTljZGM3ZDA3OWRmZWRlOTA3NjBjMGY0ZWU4NGIyYjAwOTFlNDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0NWIxNzg4ZjYwOTViNDhhNDNkNWM3NmI5MWVlZjk5OWZmNmIxMTM1OTY0NDg1ZjhlNjJjMjBjNTMzYTNlZGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIyNzJhNDE1N2Q3MTIwZTBmMjNhMzBmNzE3YjE4YWY0MzE5ZmViZWYzMGUyMTllM2E0MzZmZWE2YzlhNWQ5ZDQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1c0a6dda627040b2a39a1d70a34d64d3",
+      "statement": "Hook modes exit without output in a checkout that has no agent-board config file unless --repo is passed, so user-level hooks never poll unconfigured repositories.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/agent-board.mjs#L479-L487",
+          "version": "repo-lines-v1:sha256:3859ddb965af6d423d01eb977fa10347ba0b0a201f2b5281f2d4e846631ca20f:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGNkYTQzMjNkOWNmYjUyYjUyMDJiZWUyOTIxOWZiOTVkN2M1YzliMGNhZmU3MmFmMDVmY2RkNGFkMTNhZGE1NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWI5MjU4MmJmZTQzMGQyZTFhNzg5NTA3MzRhMDZjNGRmODEzNTdiZmQzNGI1YTY3NGM4NzViYmZhYzFjZTQyNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzZhYmVlMmNhYjQ5ODRhZjJmYmY0OGMwYmM3Yjk2YWRiMGE0MjViMzljZWYyODEyZTFlZjhhNzI3YzUyN2JiOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2E2Zjg3OGMxOTE2Nzg2NTJiN2E5YjljMjZlYWJjMjY3YWI2ZDRiZjBkNTI0YWZjNTU2NmI3MDZjYWM4YzJlZCJ9"
+        },
+        {
+          "resource": "repo://agent-board/install.test.mjs#L148-L154",
+          "version": "repo-lines-v1:sha256:29010c7d5657999c518ff8b76374ce8062e77ceb3586ed0907eeb7b7e45613fd:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjgxMWJmMjM2MjE2NzllMDBiZjYyNDc5ZWNmZTNmZjIzMmQ4ZTUwYWUwMWQzZWFhNWViNmJlNmU5MTEzMWE5ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjZmNWI0MGIxNTg0NTdkMTc4NjRmMjE3OTA3ODZkZDVhMmVjZGI2NGI2NmE2NTFmNzg4ZDRlMjVjZDMzMDNkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOGY5ODFiN2NhN2JhZjVkYmQ5NzA0NzEzZjBiYjI2Yzc1YzhmNDRiMDBjYWIwNzQzYTRkM2Y1MTdlZTkxMzI5ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9e5d5905d7f84d67ac447715b8742e3f",
+      "statement": "post-tool reports pending notices and, when a poll is due, records lastPollAt before spawning a detached background poll, so it never waits on the network and a failing poll backs off a full interval.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/agent-board.mjs#L410-L431",
+          "version": "repo-lines-v1:sha256:dd2e7863e4581545fb27d2e53da0829776dc3f48eb5da3b3821c808d06727e5e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlOTJhZjU4MTNmYzkxY2E3ZTVkZGFiOTQxNWY4ZDAzNzg3ZmNlODk4MjM2MGUzOGQwMjg4ZGU5NzA4NzM1YTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkyMDQwZTA5NWE5NGUyYWRhNzRlNDIxZjM3MTg3NTFhOTFhODEwYmZkNjZmNDhmNGU5MzljN2I3NDgwZWI2NzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZmZGI5MTgxZjY2NGFmZGFlYjFlOTAwN2RiZWM3NjI1MWI5YzY1MmRmNzkxYzYyOTYyZTNhOTRiY2MwNjcxMzUifQ"
+        },
+        {
+          "resource": "repo://agent-board/agent-board.test.mjs#L136-L200",
+          "version": "repo-lines-v1:sha256:9c841ebb6701d70623bfe4a02ec701d4f912105bb1acf903d8a79796bc93dd28:eyJzZWxlY3RlZExpbmVDb3VudCI6NjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNmMDk0OTYwMzI5NmVlNjBhZmQwYWRjMTgwYjhkNDU1MWZkZjE4MWYyNTdmMDBmN2RiNTM5NWE0NWYxNTg5NDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJkY2M1ZmNmMWUyNTA1MmM0Y2NmYmU2NTdkMGQ1OGZlNTBmZDM4Y2Q4NzViMTEzM2U2NWM4ZGVjNTkwNTgyOTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjczMGRjN2FlODgxMjIxNzcwZjUxOWJjMzA1YzMzOTk3MGYyZWM2ZWVkMzI3YTFhNTU2OTAyMjk5NWRlYWJlMTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7d87b90940d5407b9040e923fdab6d96",
+      "statement": "The stop mode skips when stop_hook_active is set, polls at most once a minute, and blocks finishing once for relevant unseen updates.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/agent-board.mjs#L433-L457",
+          "version": "repo-lines-v1:sha256:673554a36ce456dd11c7b947ce8bebfd08bdc569f9c9842f6df776616877c524:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmNjVlOGJlYzYyZTNlY2RjZGExMjE5ZWRiNDhjNjg1OTM4OTA1ZGQzNThjNmJkMzNiYjI4MzUyZjA2YjJlN2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkyMDQwZTA5NWE5NGUyYWRhNzRlNDIxZjM3MTg3NTFhOTFhODEwYmZkNjZmNDhmNGU5MzljN2I3NDgwZWI2NzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJhZjk3NGIzYzg4MjhlZjgxMDc0N2IyZjA2ZjI5ZDhiMDMyMjliNWVhZDYxNmZlZmM5YTIxNDUyN2Q1ODUyYzQifQ"
+        },
+        {
+          "resource": "repo://agent-board/agent-board.test.mjs#L168-L185",
+          "version": "repo-lines-v1:sha256:7383eee712c9163e6f9699377f7a50242905053ebe8b0aa561360b060eef2edc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlYTJiODlhNWRiYjA3OGM2YWU1ZWFmODRiOTdkNzc3MTgxYTg1NzUxYmMyZDY3YWI3NmRhMDE1ODc1NmMwYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM4NjBmMTJmMmYyYjUzZDg2ZDc0ZjgwZmU5MjEyMzQ3NGQxMmIyZTI3M2U5ZjQ3ZGU5YTVlNDEyZGFlNjZhNTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIyYzE2Mzk3ZWM4ZjMzMjU2MjcyOGJkYzJhYTk1ODU3NDc3YTRhYmI3OTU1MTg3N2YwNTE4MGY0Y2VlZDUxZTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3f5a5389b3194dc6b9d448630fdb7219",
+      "statement": "Activity by others is relevant when it exactly mentions the login, is in a thread the login is involved in, or names files changed on the branch, and each update is reported once.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/agent-board.mjs#L244-L300",
+          "version": "repo-lines-v1:sha256:b117dff65b5e490c404f7bc49ad76e323413abe69757fdee5ff3f0ac71dc1a79:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZjOGYxOGYxN2NkMzQyNDk3NmRhMGQ3YzU1MmVkMTk0MzcwZjcyYmFlZjUxNDI2NjgxMzBmYzkwMGZmZWUxM2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgxN2QwM2M1ZGEzYTNkNzAzMGE5YTQyNmFmODA4MzJmZjRiYmJhZTQxMTE1MWYzNTUwZjg2OGQ1MDEzOWNiYTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM4OTVlMzZlNjc0MWMyYjhkMGQ1Yjc5MTJmZTQ1YzI4N2Y1ZjE5ZTQ1M2QxYTMzZDMwMWI4NWMzZTAwYzEwZDEifQ"
+        },
+        {
+          "resource": "repo://agent-board/agent-board.test.mjs#L33-L73",
+          "version": "repo-lines-v1:sha256:2eb17d23aba01b7718b22c96928a2bc7d2b48da2d4df2e62741d699a624aab6f:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ODJkNmZkYTY4Y2FmZThhMTFiMmE2MjExMzJhOWU1ZmM3MGMxNzE5ZDgxMjJmYzZmOWE5YTNlMTBlZDJmODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc2MDBjZDdlNDU4YTRjNjI5ZmJkZjc5ZmUzY2FmNDBmNjk0ZDVkZDA1NDIxZWQyZjBmOGI0Njk4NjhlZTVkZDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRhZDlkM2Y4NWQzNTEzMjQzNDczMDdhMjU4NzRhZDQzMzA2ZjdjYWI0MjNkNTRlM2Q1NzUyMTlmZTBiZWEwMzYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_af643e71263544f18baebb79e98c8234",
+      "statement": "The background poll searches from a cursor that overlaps the previous poll by two minutes, never moves the cursor backwards, and merges results under the state lock.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/agent-board.mjs#L337-L362",
+          "version": "repo-lines-v1:sha256:5bde933bfcffb01a1f2aaac90e02da0ae72c089032819bdb76c96d6bb7a32b08:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwMWQyNWM3ZWVmZjY3NzA1MjE3NTVmZjE2OWQ4YWYxMDk0YmJmYzY3ODU0ODZhNDQ2NmI1NDZlYjVlNTM0M2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVhMjE3MmE2OWU3M2JiZDEyODVjMzhiYjY1YWQyNDk2MWIzZTBkOGYxNDE3YWM3MDg4MTU4NWE0YzA0OTQ4NzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA0MTFkNDgyOTMwMzE5MmJkYzIxZjQ4ZmFhMDk2YTllYTQxYzlmNjg3NzIyOGRiM2ZkZTlmMjkxNjBmMTVhMmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5173d2fde81d4471aae67a2f66446e16",
+      "statement": "State lives in a per-worktree agent-board directory under the git dir, guarded by a lock file used only for read-modify-write with a 10 second stale timeout.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/agent-board.mjs#L179-L229",
+          "version": "repo-lines-v1:sha256:a9b70cdbb0a1e1142a79248a1b8bcdcbec255dcc2577f2bc8e4ded2e3f9a25ea:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2NGQxZTNkMDA2ZjA3MmUyYzA0MDY3ZWQwY2FmOWM1NDk5N2FjYjQ1YjhkMzAyN2RlNmFmMjM3ODMwNzU5ZDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjViMWM1NWU2ZWRjYzFkNjQ0Y2Q0NjMxZGQ0OTk4MzQyZDc3MmRlZThjM2IxNzQzMGVmNzViNzNhYmZmMjk2M2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ0NDdhNzZkMWEyMGU3YzE5NTNmMzM2ZTEzZGRlYTI5ZjBiOTI5OGIwZWYxZGUxODQ5YjYyMDQxODJlYWNiODEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d1f163e0400f498fa8e1a1711e48c398",
+      "statement": "With a configured gh user, the token from gh auth token is passed only in the environment of gh child processes.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/agent-board.mjs#L123-L133",
+          "version": "repo-lines-v1:sha256:e58e304b1f2b8f9d598ea1dd5f410d12baccaf895f931ee860e9ffabec739bbb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExOWViZDdkYjg0NGZmMmFkM2FjNjVlZDI0MDEzODcyM2M3M2Y3YjgwYzZmODU0MTdiNDIyYzAxNGM4OGQ0YTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyYTJjYjI1YTEyMmI0NDIyMWE2MjM0ZWM2NjBhN2I1ZmI3ZjliZGU3YjNiOWUyYjNjNTU5YTBkOTZmYWM3MzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk0NmJmYmVjZDQ5YTViZTQ1ODdjMzZhZDExODQyMGU2OWIzMTE4MGVhOTU5YjQzOTdkNjQzYjA4NjdkMzU2NDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIzYjA1ZWYzYmY0ODIxNmRjYjljOGQwODNiY2U4M2VmZjU3MDg5NmUxYmZiMjMwM2FiMGQyYTJiNGZlNWQ4MDAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8a2e148002284d549880ea07063c451f",
+      "statement": "Claude and Codex formats render identical hook output with additionalContext or a block decision, while the json format returns the plain result for the opencode plugin.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/agent-board.mjs#L323-L331",
+          "version": "repo-lines-v1:sha256:c6c5c5f59ffa6a8baf6413d7ca19d79f7dc757a94aa8cbafc5946ccd4798a3fa:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiY2JiYWM3OGFkMzkzYzI1NzQxZDA5OGM0NjRkZTVjMWJmYjFmYjQyMmIwODFlOWJjZWI4YTQwZmZhNTQ1NGY1MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDE3OGMxMGYwMDY0OTBlMTE5MzFlNWI1OTNjMTU5NDdiYzRlOTJhNDg3MTQwMTI2OTAxZjMzODYwMDZkZTdlMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTEwYWU0ZGE2ZDFkOTdiZWE1OTU4YzA5MTViMmNmMTg4ZjMxMWY3ZDIyM2YwYjc5ODU3MjE4NTdiZWE2NTJkYiJ9"
+        },
+        {
+          "resource": "repo://agent-board/agent-board.test.mjs#L82-L90",
+          "version": "repo-lines-v1:sha256:616ba25c8d3340ef7912f1b2b01ba100f60863f76a2d82ae2e5cfd6dd4cc5773:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2M2ZDU4MWI1YzBkZjRhNDAzZjYxMTgzMjE0ZDYyOGZiYjllNmYxYmQ4YWRlZTI4YzM4ZDZkYjI5NTNjZWQ5YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjZmNWI0MGIxNTg0NTdkMTc4NjRmMjE3OTA3ODZkZDVhMmVjZGI2NGI2NmE2NTFmNzg4ZDRlMjVjZDMzMDNkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTM3N2JhYjY2OTliZmQ2MzU0ODI2ZDVlMDlkMzk5YjJiOWUwOWJjYzYwN2I3ODQ2ZDdkMDJmNGYyNmMxNWVkYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2M3NjRhM2RjNTZhZTdjNzZhYjgwNjg2YTZiZWZkNWRmYTJkMzMyMjljMzkzMTkyN2Y1YzFmZDExMmMxNzJkMCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_bb40252d40dc4b5a98873e1c55ad2b38",
+      "statement": "Errors inside a mode are appended to a rotating errors.log and hook modes exit 0 on bad arguments or settings, while check exits 1.",
+      "evidence": [
+        {
+          "resource": "repo://agent-board/agent-board.mjs#L231-L239",
+          "version": "repo-lines-v1:sha256:55dfc679bb27754c5ca2d147dc6f0f4987ebcf0339f996b98864f68b5041387a:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTRiN2UzODY1ODk1YmIwYTRjNTNiYjMzM2M0MzlkMThmYzA0YjI4OGM3NWI0YTY0MWRiOTBmMzk1M2JlNDZiNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmI1ODBlOTY0ZjgzYTQ3M2Y0M2Q0NDM4NDYyOTQ5ZDY4YjU2MDBmZGE3ODdmMTYzNzQ1ZDAwZGU4OWNiZjM2YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDAzYzUwMzk2MTRkZjRhYmM5YjAzMGZlMTk5ZGIxYTUzMDM2NzNmM2QxMmI1YzAxOTEwZTMwYWE1ZGQ3NjliNiJ9"
+        },
+        {
+          "resource": "repo://agent-board/agent-board.mjs#L510-L518",
+          "version": "repo-lines-v1:sha256:1e96dafbc21dd97c5f93516272e16a5fa4974e4f4c228368938164b827f6304c:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzNkYzI1YThlNzlhYjg1NzgwNmVlMWY3M2NmN2U4MDE0YzgzNTNjMmEzOTg1YzRhMTBjYTAzOTVjMGM0NWQxNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmI1ODBlOTY0ZjgzYTQ3M2Y0M2Q0NDM4NDYyOTQ5ZDY4YjU2MDBmZGE3ODdmMTYzNzQ1ZDAwZGU4OWNiZjM2YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://agent-board/agent-board.test.mjs#L214-L217",
+          "version": "repo-lines-v1:sha256:5bc130d5a74143aad8cd3799bc8770cc8f1bab9c9894829b0f10c9ea510e662e:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWQzZDVkMTQyZmU4NzEwYzU3ZDI3YjE5MTFjZjMzYjc4ZDQxNGNmN2M5MTA0MDI4Mjk0Nzg2NGFlN2IzMjBkMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjZmNWI0MGIxNTg0NTdkMTc4NjRmMjE3OTA3ODZkZDVhMmVjZGI2NGI2NmE2NTFmNzg4ZDRlMjVjZDMzMDNkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGM1MjM1ZTc4YTE3N2UyMTA0NmE2ZDU2Y2M0ODcxZWRmMjljZTliMmFhYjA3NGQwYTQ2MjhmZGIxMTgxOGMxZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-15T21:22:10.058Z"
+  }
+}
